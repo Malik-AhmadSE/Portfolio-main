@@ -37,7 +37,14 @@ const Contact = () => {
         .sendForm(
           "service_it8ijsi",
           "template_1j8hbhg",
-          form.current,
+          {
+
+            from_name: values.name,
+            from_email: values.email,
+            to_name: "Ahmad Malik",
+            message: values.message,
+
+          },
           "WBuATgS5OismJZc9B"
         )
         .then(
